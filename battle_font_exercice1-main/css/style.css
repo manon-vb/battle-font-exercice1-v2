@@ -1,0 +1,210 @@
+
+.handjet{
+  font-family: 'handjet';
+}
+
+.tiny{
+  font-family: 'tiny';
+}
+
+
+h2{
+  font-size: 200px ;
+ }
+  
+#premier {
+  position: absolute;
+  left:20vh;
+  top:5vw;
+  font-variation-settings: "wght" 100;
+  transform: rotate(-10deg);
+  color:rgba(55, 39, 128, 0.686);
+  opacity: 1;
+}
+  
+#second {
+  position: relative;
+  top: -70vh;
+  left: -10vw;
+  font-variation-settings: "wght" 400, "ELRG" 1, "ELSH" 1;
+  transform: rotate(-70deg);
+  color:rgba(135, 47, 75, 0.686);
+  z-index: -1;
+}  
+
+#trois {
+  position: absolute;
+  right:20vh;
+  top:5vw;
+  font-size: 200px;
+  font-variation-settings: "wght" 300;
+  transform: rotate(20deg);
+  color:rgba(55, 39, 128, 0.686);
+  opacity: 1;
+}
+
+#quatre {
+  position: absolute;
+  top: 10%;
+  right: 15%;
+  font-variation-settings: "wght" 600, "ELRG" 1, "ELSH" 5;
+  font-size: 100px;
+  transform: rotate(0deg);
+  color:rgba(135, 47, 75, 0.686);
+  mix-blend-mode: color-dodge;
+  
+}
+
+#cinq{
+  position:absolute;
+  top:10%;
+  right:25%;
+  font-variation-settings: "wght" 300, "ELRG" 1, "ELSH" 8;
+  font-size: 150px;
+  transform: rotate(-5deg);
+  color:rgba(55, 39, 128, 0.686);
+  animation-name: waw; /*renseigner ici le nome de l'animation c'est écrit à côté de keyframes*/
+  animation-duration: 3s; /*durée totale d'une itération de l'animation en seconde*/
+  animation-iteration-count: infinite; /*nombre d'itération de l'animation*/
+  animation-direction: alternate;/*lire l'animation dans un sens puis dans l'autre*/
+  animation-fill-mode: forwards;/*si l'animation doit se terminer elle garde sa valeur finale*/
+	animation-delay : 3s;/*faire démarer une animation un peu en retard*/
+}
+
+#interactif{
+position: absolute;
+top: 60%;
+left: 10%;
+font-variation-settings: "wght" 900, "ELRG" 1, "ELSH" 3;
+font-size: 150px;
+color:rgba(113, 199, 185, 0.686);
+
+}
+
+#interactif:hover{
+  color:black;
+  font-variation-settings: "wght" 900, "ELRG" 1, "ELSH" 9;
+}
+
+h2{
+  animation-name: couleur; /*renseigner ici le nome de l'animation c'est écrit à côté de keyframes*/
+  animation-duration: 3s; /*durée totale d'une itération de l'animation en seconde*/
+  animation-iteration-count: infinite; /*nombre d'itération de l'animation*/
+  animation-direction: alternate;/*lire l'animation dans un sens puis dans l'autre*/
+  animation-fill-mode: forwards;/*si l'animation doit se terminer elle garde sa valeur finale*/
+	animation-delay : 0s;/*faire démarer une animation un peu en retard*/
+}
+
+@keyframes waw { /*ici vous renseignez le nom de l'animation à réutiliser 
+  pour la propriété animation-name*/
+  
+0%{ /*ici on renseigne la valeur de départ*/
+  color:rgba(55, 39, 128, 0.686);
+  font-variation-settings: "wght" 300; 
+}
+
+50%{ /*ici on renseigne la valeur de départ*/
+  color:rgba(55, 39, 128, 0.686);
+  font-variation-settings: "wght" 500; 
+}
+55%{ /*ici on renseigne la valeur de départ*/
+  color:rgba(55, 39, 128, 0.686);
+  font-variation-settings: "wght" 500; 
+}
+
+100%{/*ici on renseigne la valeur de fin*/
+  color: rgba(135, 47, 75, 0.686);
+  font-variation-settings: "wght" 900; 
+}
+}
+
+@keyframes couleur { /*ici vous renseignez le nom de l'animation à réutiliser 
+  pour la propriété animation-name*/
+  
+0%{ /*ici on renseigne la valeur de départ*/
+  color:rgba(55, 39, 128, 0.686);
+ 
+}
+
+50%{ /*ici on renseigne la valeur de départ*/
+  color:rgba(55, 39, 128, 0.686);
+ 
+}
+55%{ /*ici on renseigne la valeur de départ*/
+  color:rgba(55, 39, 128, 0.686);
+  
+}
+
+100%{/*ici on renseigne la valeur de fin*/
+  color: rgba(135, 47, 75, 0.686);
+}
+}
+
+.survol{
+  font-variation-settings: "wght" 100;
+  transition-duration: 3s;
+}
+
+.survol:hover{
+  animation-name: animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animation {
+  0%{
+    color:black;
+  }
+  100%{
+    color:blue;
+  }
+}
+
+.carre{
+  width:70px;
+	height:70px;
+  background-color:rgba(135, 47, 75, 0.686);
+  bottom: 10%;
+  animation-name: cute;
+  animation-duration:5s;
+  animation-iteration-count:infinite;
+  animation-play-state: running;
+}
+
+#a{
+  position:absolute;
+  left: 10%;
+}
+
+#b{
+  position:absolute;
+  left: 15%;
+}
+
+#c{
+  position:absolute;
+  left: 20%;
+}
+
+#d{
+  position:absolute;
+  left: 25%;
+}
+
+@keyframes cute {
+0%{
+  transform: rotate(0deg);
+}
+100%{
+  transform: rotate(180deg);
+}
+}
+
+.carre:hover{
+  animation-play-state: paused;
+}
+
+body{ 
+  cursor : url(../souris\ mimi.webp), pointer;
+  }
+  
